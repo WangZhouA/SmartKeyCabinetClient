@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.saiyi.smartkeycabinetclient.account.ui.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp">
+
+        <com.lib.fast.common.widgets.CheckImageView
+            android:id="@+id/uname_ck"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/login01"/>
+
+        <EditText
+            android:id="@+id/uname_et"
+            android:layout_toRightOf="@+id/uname_ck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:textSize="@dimen/text_middle"
+            android:hint="输入手机号"
+            android:textColorHint="@color/hint_text_color"
+            android:textColor="@color/normal_text_color"
+            android:background="@null"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp">
+
+        <com.lib.fast.common.widgets.CheckImageView
+            android:id="@+id/ucode_ck"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/login03"/>
+
+        <EditText
+            android:id="@+id/ucode_et"
+            android:layout_toRightOf="@+id/ucode_ck"
+            android:layout_toLeftOf="@+id/count_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:maxLength="@integer/sms_verify_length"
+            android:textSize="@dimen/text_middle"
+            android:hint="输入验证码"
+            android:textColorHint="@color/hint_text_color"
+            android:textColor="@color/normal_text_color"
+            android:background="@null"/>
+
+        <com.lib.fast.common.widgets.text.CountDownView
+            android:id="@+id/count_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/normal_text_color"
+            android:layout_alignParentRight="true"
+            android:text="获取验证码"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp">
+
+        <com.lib.fast.common.widgets.CheckImageView
+            android:id="@+id/upwd_ck"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/login02"/>
+
+        <EditText
+            android:id="@+id/upwd_et"
+            android:layout_toRightOf="@+id/upwd_ck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_middle"
+            android:hint="输入8位以上母字和数字密码"
+            android:textColorHint="@color/hint_text_color"
+            android:textColor="@color/normal_text_color"
+            android:background="@null"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <com.lib.fast.common.widgets.CheckImageView
+            android:id="@+id/urepwd_ck"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/login02"/>
+
+        <EditText
+            android:id="@+id/urepwd_et"
+            android:layout_toRightOf="@+id/urepwd_ck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_middle"
+            android:hint="确认密码"
+            android:textColorHint="@color/hint_text_color"
+            android:textColor="@color/normal_text_color"
+            android:background="@null"
+            android:layout_alignParentRight="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:background="@drawable/shape_login_btn"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:text="确定"/>
+</LinearLayout>

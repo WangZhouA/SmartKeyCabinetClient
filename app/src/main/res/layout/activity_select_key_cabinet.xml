@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saiyi.smartkeycabinetclient.key.ui.SelectKeyCabinetActivity">
+
+    <com.ajguan.library.EasyRefreshLayout
+        android:id="@+id/ez_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/submit_btn">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/key_cabinet_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </com.ajguan.library.EasyRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:background="@drawable/shape_login_btn"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:text="下一步"/>
+</RelativeLayout>

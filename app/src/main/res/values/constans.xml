@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--短信验证码长度-->
+    <integer name="sms_verify_length">6</integer>
+</resources>

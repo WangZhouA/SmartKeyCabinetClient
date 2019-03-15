@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saiyi.smartkeycabinetclient.key.ui.SelectKeyPositionActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/key_status_rv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.ajguan.library.EasyRefreshLayout
+        android:id="@+id/ez_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/key_status_rv"
+        android:layout_above="@+id/bottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/key_positions_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.ajguan.library.EasyRefreshLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3C8DFB"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="1dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@color/white"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15dp"
+            android:text="取消"/>
+
+        <TextView
+            android:id="@+id/complate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15dp"
+            android:text="确定"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

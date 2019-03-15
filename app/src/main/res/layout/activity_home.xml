@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saiyi.smartkeycabinetclient.home.ui.HomeActivity">
+
+    <com.lib.fast.common.widgets.ScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="-15dp"
+        android:layout_above="@+id/tabs_ll"/>
+
+    <LinearLayout
+        android:id="@+id/tabs_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="3"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tabs_key_ll"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <com.lib.fast.common.widgets.CheckImageView
+                android:layout_width="34dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_application_key"/>
+
+            <com.lib.fast.common.widgets.CheckTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_10dp"
+                android:textColor="@drawable/selector_home_tab_text_color"
+                android:text="申请钥匙"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabs_devices_ll"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:layout_weight="1"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="#FFF"/>
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_manager_device_bg"/>
+
+            <com.lib.fast.common.widgets.CheckImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/selector_manager_device"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tabs_me_ll"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <com.lib.fast.common.widgets.CheckImageView
+                android:layout_width="34dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/selector_personal_center"/>
+
+            <com.lib.fast.common.widgets.CheckTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_10dp"
+                android:textColor="@drawable/selector_home_tab_text_color"
+                android:text="我的"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

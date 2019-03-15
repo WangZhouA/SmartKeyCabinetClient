@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saiyi.smartkeycabinetclient">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".core.app.SmartKeyCabinetClientApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".spalish.ui.SpalishActivity"
+            android:theme="@style/SpalishTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".account.ui.LoginActivity" />
+        <activity android:name=".account.ui.RegisterActivity" />
+        <activity android:name=".account.ui.ForgetPwdActivity" />
+        <activity android:name=".account.ui.PerfectInfomationActivity" />
+        <activity android:name=".home.ui.HomeActivity" />
+        <activity android:name=".user.ui.UserInfoActivity" />
+        <activity android:name=".device.ui.AddDeviceActivity" />
+        <activity android:name=".key.ui.SelectKeyCabinetActivity" />
+        <activity android:name=".key.ui.SelectKeyPositionActivity" />
+        <activity android:name=".key.ui.ApproverActivity" />
+        <activity android:name=".user.ui.AboutUsActivity" />
+        <activity android:name=".user.ui.ApplicationActivity" />
+        <activity android:name=".user.ui.SearchApplicationActivity"></activity>
+    </application>
+
+</manifest>

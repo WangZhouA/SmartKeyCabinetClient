@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saiyi.smartkeycabinetclient.user.ui.AboutUsActivity">
+
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="73dp"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_spalish_logo"
+        android:text="logo"/>
+
+    <TextView
+        android:id="@+id/ap_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/normal_text_color"
+        android:textSize="16dp"
+        android:text="XXXX"/>
+
+    <TextView
+        android:id="@+id/ap_version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ap_name_tv"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/app_version_text_color"
+        android:textSize="13dp"
+        android:text="XXXX"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="13dp"
+        android:textColor="@color/company_text_color"
+        android:text="XXXX公司·版权所有"/>
+</RelativeLayout>

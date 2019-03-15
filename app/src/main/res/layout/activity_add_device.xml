@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saiyi.smartkeycabinetclient.device.ui.AddDeviceActivity">
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        app:qrcv_animTime="1000"
+        app:qrcv_barCodeTipText="将二维码/条码放入框内，即可自动扫描"
+        app:qrcv_barcodeRectHeight="120dp"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="#09BB07"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isCenterVertical="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="false"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="true"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="270dp"
+        app:qrcv_scanLineColor="#09BB07"
+        app:qrcv_scanLineMargin="0dp"
+        app:qrcv_scanLineSize="0.5dp"
+        app:qrcv_tipBackgroundColor="@color/none"
+        app:qrcv_tipTextColor="#9FACBD"
+        app:qrcv_tipTextSize="13dp"
+        app:qrcv_toolbarHeight="@dimen/navigationbar_height"
+        app:qrcv_topOffset="130dp" />
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/code_et"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_input_code_bg"
+            android:hint="输入设备编码"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:textColor="@color/normal_text_color"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/add_device_btn"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#3C8DFB"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:text="确定"/>
+
+    </LinearLayout>
+</RelativeLayout>
